@@ -14,15 +14,10 @@ connectDB();
 
 app.use(
   cors({
-    origin: [
-      "https://library-seat-reservation.vercel.app",
-      "http://localhost:3000"
-    ],
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    origin: ["https://library-seat-reservation.vercel.app"],
     credentials: true
   })
 );
-app.options("*", cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/seats", seatRoutes);
