@@ -12,7 +12,12 @@ const app = express();
 
 connectDB();
 
-app.use(cors());
+app.use(
+  cors({
+    origin: "https://library-seat-reservation.vercel.app",
+    credentials: true
+  })
+);
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/seats", seatRoutes);
