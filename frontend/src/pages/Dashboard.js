@@ -23,7 +23,7 @@ function Dashboard() {
   const fetchSeats = useCallback(async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/seats?floor=${selectedFloor}`
+        `https://library-seat-backend-uvwy.onrender.com/api/seats?floor=${selectedFloor}`
       );
       setSeats(res.data);
       const seatsData = res.data;
@@ -97,7 +97,7 @@ setStats({
 
       if(window.confirm("Cancel your current reservation?")) {
         try {
-          await axios.post(`http://localhost:5000/api/seats/cancel/${seat._id}`, {
+          await axios.post(`https://library-seat-backend-uvwy.onrender.com/api/seats/cancel/${seat._id}`, {
             userId,
             bookingId: activeBooking._id
           });
@@ -114,7 +114,7 @@ setStats({
 
   const handleConfirmBooking = async (seatId, startTime, endTime) => {
     try {
-      await axios.post(`http://localhost:5000/api/seats/book/${seatId}`, {
+      await axios.post(`https://library-seat-backend-uvwy.onrender.com/api/seats/book/${seatId}`, {
          userId,
          startTime,
          endTime

@@ -18,7 +18,7 @@ const floorName = ["Ground Floor","Floor 1","Floor 2","Floor 3"];
       try{
 
         const res = await axios.get(
-          `http://localhost:5000/api/seats/my-booking/${userId}`
+          `https://library-seat-backend-uvwy.onrender.com/api/seats/my-booking/${userId}`
         );
 
         setBooking(res.data);

@@ -19,7 +19,7 @@ function MyBooking() {
       const userId = localStorage.getItem("userId");
 
       const res = await axios.get(
-        `http://localhost:5000/api/seats/my-booking/${userId}`
+        `https://library-seat-backend-uvwy.onrender.com/api/seats/my-booking/${userId}`
       );
 
       setBooking(res.data);
@@ -41,7 +41,7 @@ function MyBooking() {
     try {
 
       await axios.post(
-        `http://localhost:5000/api/seats/cancel/${booking.seatId}`,
+        `https://library-seat-backend-uvwy.onrender.com/api/seats/cancel/${booking.seatId}`,
         {
           userId,
           bookingId: booking.bookingId
