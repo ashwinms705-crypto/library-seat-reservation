@@ -6,7 +6,6 @@ function Home() {
 
   const navigate = useNavigate();
     const userName = localStorage.getItem("userName");
-    const userEmail = localStorage.getItem("userEmail");
     const [openMenu, setOpenMenu] = useState(false);
     return (
 

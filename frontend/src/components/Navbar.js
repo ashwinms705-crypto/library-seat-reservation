@@ -5,13 +5,7 @@ function Navbar() {
 
   const navigate = useNavigate();
   const location=useLocation();
-  const goToDashboard = () => {
-    navigate("/dashboard");
-  };
-
-  const goToMyBooking = () => {
-    navigate("/my-booking");
-  };
+  
 
   const handleLogout = () => {
     localStorage.removeItem("userId");
