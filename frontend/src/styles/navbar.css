@@ -78,3 +78,32 @@
   color:#27ae60;
   transform:translateX(-4px);
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px;
+    height: auto;
+    min-height: 65px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .navbar-actions {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-btn, .logout-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  
+  .back-nav {
+    margin-left: 15px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+}

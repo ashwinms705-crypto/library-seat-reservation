@@ -387,3 +387,61 @@ body{
 .seat:hover .seat-tooltip{
   opacity:1;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 20px 10px;
+    overflow-x: auto;
+  }
+  
+  .dashboard-title {
+    font-size: 24px;
+  }
+
+  .floor-selector {
+    flex-wrap: wrap;
+  }
+
+  .legend {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .table-row, .middle-layout, .window-row {
+    padding: 0 10px;
+  }
+
+  /* Shrink physical sizes slightly to fit better, though horizontal scrolling is enabled */
+  .void-area {
+    width: 260px;
+    height: 200px;
+  }
+  
+  .seat {
+    width: 38px;
+    height: 38px;
+  }
+  
+  .seat-number {
+    font-size: 10px;
+  }
+
+  .table-row {
+    gap: 30px;
+  }
+
+  .middle-layout {
+    gap: 30px;
+  }
+
+  .table-middle {
+    width: 50px;
+    height: 75px;
+  }
+
+  .table-middle-horizontal {
+    width: 75px;
+    height: 50px;
+  }
+}

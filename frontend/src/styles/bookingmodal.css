@@ -151,3 +151,25 @@
   color:#ffffff;
   opacity:0.9;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-actions button {
+    width: 100%;
+  }
+
+  .modal-actions-center .confirm-btn {
+    width: 100%;
+  }
+}

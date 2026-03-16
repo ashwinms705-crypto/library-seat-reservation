@@ -135,3 +135,26 @@
   cursor:pointer;
   font-weight:500;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .auth-card {
+    width: 90%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+
+  .auth-title {
+    font-size: 22px;
+  }
+
+  .auth-home {
+    top: 15px;
+    left: 15px;
+  }
+  
+  .auth-home button {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
