@@ -388,11 +388,26 @@ body{
   opacity:1;
 }
 
+/* Dashboard Scroll Wrapper */
+.dashboard-scroll-wrapper {
+  overflow-x: auto;
+  padding-bottom: 20px;
+  margin: 0 -10px;
+  padding: 0 10px;
+}
+
+.dashboard-scroll-content {
+  min-width: 800px; /* Force minimum width to prevent flex item crushing and clipping */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .dashboard-container {
     padding: 20px 10px;
-    overflow-x: auto;
+    /* overflow-x on container is moved to wrapper */
   }
   
   .dashboard-title {
@@ -409,7 +424,7 @@ body{
   }
 
   .table-row, .middle-layout, .window-row {
-    padding: 0 10px;
+    padding: 0; /* Remove side padding to save space on mobile inside the forcing wrapper */
   }
 
   /* Shrink physical sizes slightly to fit better, though horizontal scrolling is enabled */
