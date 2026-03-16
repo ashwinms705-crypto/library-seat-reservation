@@ -226,6 +226,8 @@ setStats({
       <Navbar />
 
       <div className="dashboard-container">
+        <div className="dashboard-scroll-wrapper">
+  <div className="dashboard-scroll-content">
 
         <h2 className="dashboard-title">Library Seat Reservation</h2>
         <div className="seat-stats">
@@ -459,7 +461,9 @@ setStats({
         )}
 
       </div>
-      
+      </div>
+
+</div>
       <BookingModal 
         isOpen={isModalOpen}
         onClose={() => {
